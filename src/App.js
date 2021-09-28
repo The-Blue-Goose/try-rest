@@ -8,7 +8,7 @@ const App = () =>{
 
  <div className="container">
 
- <p>mr-headrick</p>
+ <p>Mr. William H. Verhelle III</p>
 
  </div>
 
