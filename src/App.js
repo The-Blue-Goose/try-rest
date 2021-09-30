@@ -1,7 +1,9 @@
 import './App.css';
 import Axios from 'axios';
+import { useState } from 'react';
 
 const App = () =>{
+    const [joke, setJoke] = useState()
     const getJoke = () => {
         Axios.get("https://icanhazdadjoke.com/", {
         headers: {
@@ -10,7 +12,8 @@ const App = () =>{
         }
         ).then(
             (response) => {
-                console.log(response);
+                //console.log(response);
+                setJoke(response.data.joke);
                 }
             );
         };
