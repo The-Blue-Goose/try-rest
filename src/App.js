@@ -19,7 +19,7 @@ const App = () =>{
         };
  return (
 <div className="container"><button onClick={getJoke}>dad joke</button>
-<br/><p>Hi!</p>
+<br/><p>{joke}</p>
 </div>
  );
 };
