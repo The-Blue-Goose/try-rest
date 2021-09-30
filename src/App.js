@@ -5,7 +5,7 @@ const App = () =>{
     const getJoke = () => {
         Axios.get("https://icanhazdadjoke.com/", {
         headers: {
-            "Accept": "text/plain",
+            "Accept": "application/json",
           }
         }
         ).then(
